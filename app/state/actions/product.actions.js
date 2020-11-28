@@ -19,7 +19,8 @@ export function fetchProducts() {
     return function asyncFetchProducts(dispatch, getState) {
         // async/timer specific
         // using thunk, you bring apis calls into actions instead of writing them in component
-        fetch("http://192.168.1.3:7070/api/products")
+       // fetch("http://192.168.1.3:7070/api/products")
+        fetch("http://192.168.1.3:8080/products")
         .then (response => response.json())
         .then (products => {
             // set the products to store
